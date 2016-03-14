@@ -28,4 +28,9 @@ Then tell the program where you've plugged in the lights and sensors at lines 13
 	int PIR[] = {7, 8, 13}; // pir pins read digital
 
 If you're using an LCD screen, tell the program where you've plugged it in at line 5:
-	<c
+
+<code>LiquidCrystal lcd(12, 11, 5, 4, 3, 2);</code>
+
+, and which pixels you want the lights to be displayed on the LCD screen at line 19:
+
+<code>int lcdPixels[cells] = {0, 6, 11};</code>
